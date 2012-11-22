@@ -1,0 +1,80 @@
+1. Download IntelliJ from
+
+https://github.com/downloads/SoftKeep/IDE/ideaIU-11.1.4.exe
+
+
+2. Apply IntelliJ license from 8600@thoughtworks.com:
+
+
+
+Hi 8600:
+
+
+
+I'm XXX at ChengDu office. I'm applying a license of IntelliJ 11.1 for Suncorp Direct Super project.
+
+
+
+Thanks
+
+
+
+3. Hsql Configuration:
+
+
+
+Run -> Edit Configurations choose '+' (left corner) and choose 'Application':
+
+
+
+Main class: au.com.suncorp.common.utilities.dbserver.HsqlDatabaseServer
+
+Working directory: C:\Dev\work\Life\super-online\trunk
+
+Use classpath of module: superonline-services
+
+
+
+4. Tomcat Configuration:
+
+
+
+download: https://github.com/downloads/SoftKeep/IDE/hsqldb.jar
+
+copy it to C:\Dev\work\tools\apache-tomcat-6.0.35\lib
+
+
+
+Run -> Edit Configurations choose '+' (left corner) and choose 'Tomcat Server'
+
+
+
+Server Tab:
+
+
+Application server: Tomcat 6
+VM options: -Dcatalina.base="C:\Dev\work\tools\apache-tomcat-6.0.35" -Dcatalina.home="C:\Dev\work\tools\apache-tomcat-6.0.35" -Dwtp.deploy="C:\Dev\work\tools\apache-tomcat-6.0.35\wtpwebapps" -Djava.endorsed.dirs="C:\Dev\work\tools\apache-tomcat-6.0.35\endorsed" -Xms512m -Xmx1024m -XX:MaxPermSize=256m
+
+
+Deployment Tab:
+
+
+
+Deploy at the server startup: superonline-webapp:war exploded
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
